@@ -1,0 +1,60 @@
+.card {
+
+  min-width: 255px;
+  background-color: #FF8B64;
+  border-radius: 12px;
+  overflow: hidden;
+
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  // background-image: url('../../images/icon-work.svg');
+  background-repeat: no-repeat;
+  background-position: top right 15px;
+  // opacity: .5;
+    // height: 300px;
+ 
+
+  // &__image-container{
+  //   background-color: #FF8B64;
+  //   display: flex;
+  //   justify-content: end;
+  //   padding-right: 32.5px;
+  //   height: 45px;
+  // }
+
+  &__description{
+    background-color: #1C204B;
+    padding: 32.5px;
+    border-radius: 12px;
+    min-height: 199px;
+
+    &:hover {
+      background-color: #33397A;
+      cursor: pointer;
+    }
+  }
+
+  &__category{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__category-name {
+    font-size: 18px;
+    color: #fff;
+  }
+
+  &__current-hours{
+    font-size: 56px;
+    font-weight: 200;
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+
+  &__description div:last-child {
+    font-size: 15px;
+    color: #BBC0FF;
+  }
+}

@@ -1,9 +1,12 @@
 import './App.scss';
-
+import Card from './components/Card/Card';
+import CardList from './components/CardList/CardList.jsx';
+import iconWork from './images/icon-work.svg';
 function App() {
   return (
     <div className="App">
-      <h1>Time Tracking</h1>
+      {/* <Card image={iconWork} /> */}
+      <CardList />
     </div>
   );
 }
