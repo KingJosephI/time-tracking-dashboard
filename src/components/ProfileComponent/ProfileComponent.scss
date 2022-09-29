@@ -2,4 +2,58 @@
   grid-row: 1 / span 2;
   background-color: #1C204B;
   border-radius: 12px;
+  overflow: hidden;
+  
+ 
+  &__details{
+    background-color: #5747EA;
+    padding: 28px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  } 
+  
+  &__image {
+    width: 78px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  &__info{
+    padding-top: 40px;
+    padding-bottom: 85px;
+
+
+    span {
+      color: #BBC0FF;
+    }
+  }
+
+  &__name {
+    font-size: 40px;
+    font-weight: 100;
+  }
+
+  &__periodicity{
+    padding: 28px;
+
+    ul{
+      list-style: none;
+    }
+
+    li {
+      padding: 10px 0;
+      color: #BBC0FF;
+
+      &:hover{
+        color:#fff;
+        cursor: pointer;
+      }
+
+      &.selected{
+        color: #fff;
+      }
+    }
+  }
 }
