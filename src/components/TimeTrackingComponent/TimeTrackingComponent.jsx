@@ -33,6 +33,9 @@ const TimeTrackingComponent = () => {
             ? previousWeekly
             : previousMonthly;
 
+        const selectedPeriod =
+          period === 'daily' ? 'Day' : period === 'weekly' ? 'Week' : 'Month';
+
         return (
           <Card
             key={key}
@@ -41,13 +44,7 @@ const TimeTrackingComponent = () => {
             image={image}
             currentHours={currentHours}
             previousHours={previousHours}
-            period={
-              period === 'daily'
-                ? 'Day'
-                : period === 'weekly'
-                ? 'Week'
-                : 'Month'
-            }
+            period={selectedPeriod}
           />
         );
       })}
