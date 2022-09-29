@@ -29,10 +29,12 @@ const Card = ({
             <img src={ellipsisIcon} alt="Ellipsis" />
           </div>
         </div>
-        <h2 className="card__current-hours">{currentHours}hrs</h2>
-        <div>
-          <strong className="card__periodicity">Last {periodicity} - </strong>
-          <strong className="card__previous-hours">{previousHours}hrs</strong>
+        <div className="card__details">
+          <h2 className="card__current-hours">{currentHours}hrs</h2>
+          <div>
+            <strong className="card__periodicity">Last {periodicity} - </strong>
+            <strong className="card__previous-hours">{previousHours}hrs</strong>
+          </div>
         </div>
       </div>
     </div>
