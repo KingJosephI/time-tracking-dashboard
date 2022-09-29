@@ -37,10 +37,7 @@
 
   &__periodicity{
     padding: 28px;
-
-    ul{
-      list-style: none;
-    }
+    list-style: none;
 
     li {
       padding: 10px 0;
@@ -54,6 +51,38 @@
       &.selected{
         color: #fff;
       }
+    }
+  }
+}
+
+
+@media screen and (max-width: 765px) {
+
+  .profile {
+
+    &__details{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    } 
+
+    &__info{
+      padding: 28px;
+    }
+
+    &__image {
+      width: 64px !important;
+    }
+
+    &__name {
+      font-size: 24px;
+      display: flex;
+      gap: 5px;
+    }
+
+    &__periodicity{
+      display: flex;
+      justify-content: space-between;
     }
   }
 }

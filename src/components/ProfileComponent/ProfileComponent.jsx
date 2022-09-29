@@ -12,14 +12,13 @@ const ProfileComponent = () => {
         <div className="profile__info">
           <span>Report for</span>
           <h1 className="profile__name">
-            Jeremy
-            <br />
-            Robson
+            <div className="profile__firstName">Jeremy </div>
+            <div>Robson</div>
           </h1>
         </div>
       </div>
-      <div className="profile__periodicity">
-        <ul>
+      <div>
+        <ul className="profile__periodicity">
           <li>Daily</li>
           <li className="selected">Weekly</li>
           <li>Monthly</li>
