@@ -1,6 +1,6 @@
 import React from 'react';
-import './ProfileComponent.scss';
 import profilePic from '../../images/image-jeremy.png';
+import './ProfileComponent.scss';
 
 const ProfileComponent = () => {
   return (

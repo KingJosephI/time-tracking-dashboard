@@ -1,7 +1,8 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import ellipsisIcon from '../../images/icon-ellipsis.svg';
 import './Card.scss';
+import ellipsisIcon from '../../images/icon-ellipsis.svg';
+import workIcon from '../../images/icon-work.svg';
 
 const Card = ({
   image,
@@ -47,7 +48,7 @@ Card.propTypes = {
 };
 
 Card.defaultProps = {
-  image: ellipsisIcon,
+  image: workIcon,
   title: 'Work',
   currentHours: 32,
   previousHours: 36,

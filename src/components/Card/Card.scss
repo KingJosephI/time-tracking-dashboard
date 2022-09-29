@@ -2,13 +2,13 @@
 
 .card {
   min-width: 255px;
+  height: 280px;
   background-color: #FF8B64;
   border-radius: 12px;
   overflow: hidden;
-  height: 280px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   background-repeat: no-repeat;
   background-position: top right 15px;
 

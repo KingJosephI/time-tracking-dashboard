@@ -1,10 +1,10 @@
 import './App.scss';
-import CardList from './components/CardList/CardList.jsx';
+import TimeTrackingComponent from './components/TimeTrackingComponent/TimeTrackingComponent';
 
 function App() {
   return (
     <div className="App">
-      <CardList />
+      <TimeTrackingComponent />
     </div>
   );
 }
