@@ -1,8 +1,11 @@
-import React from 'react';
+import { useContext } from 'react';
+import { PeriodContext } from '../../contexts/PeriodContext';
 import profilePic from '../../images/image-jeremy.png';
 import './ProfileComponent.scss';
 
 const ProfileComponent = () => {
+  const [period, setPeriod] = useContext(PeriodContext);
+
   return (
     <div className="profile">
       <div className="profile__details">
@@ -19,9 +22,11 @@ const ProfileComponent = () => {
       </div>
       <div>
         <ul className="profile__periodicity">
-          <li>Daily</li>
-          <li className="selected">Weekly</li>
-          <li>Monthly</li>
+          <li onClick={() => setPeriod('daily')}>Daily</li>
+          <li onClick={() => setPeriod('weekly')} className="selected">
+            Weekly
+          </li>
+          <li onClick={() => setPeriod('monthly')}>Monthly</li>
         </ul>
       </div>
     </div>

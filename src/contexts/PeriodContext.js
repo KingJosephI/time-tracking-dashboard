@@ -2,10 +2,10 @@ import { createContext, useState } from 'react';
 
 export const PeriodContext = createContext();
 export const PeriodProvider = ({ children }) => {
-  const periodicity = useState('weekly');
+  const [period, setPeriod] = useState('weekly');
 
   return (
-    <PeriodContext.Provider value={periodicity}>
+    <PeriodContext.Provider value={[period, setPeriod]}>
       {children}
     </PeriodContext.Provider>
   );
