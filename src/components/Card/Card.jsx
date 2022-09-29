@@ -1,11 +1,11 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import './Card.scss';
 import ellipsisIcon from '../../images/icon-ellipsis.svg';
+import './Card.scss';
 
 const Card = ({
   image,
-  category,
+  title,
   currentHours,
   previousHours,
   periodicity,
@@ -15,12 +15,15 @@ const Card = ({
   return (
     <div
       className="card"
-      style={{ backgroundImage: image, backgroundColor: bgColor }}
+      style={{
+        backgroundImage: `url(${image})`,
+        backgroundColor: bgColor,
+      }}
       {...props}
     >
       <div className="card__description">
         <div className="card__category">
-          <h4 className="card__category-name">{category}</h4>
+          <h4 className="card__category-name">{title}</h4>
           <div>
             <img src={ellipsisIcon} alt="Ellipsis" />
           </div>
@@ -44,7 +47,8 @@ Card.propTypes = {
 };
 
 Card.defaultProps = {
-  category: 'Work',
+  image: ellipsisIcon,
+  title: 'Work',
   currentHours: 32,
   previousHours: 36,
   periodicity: 'Week',
