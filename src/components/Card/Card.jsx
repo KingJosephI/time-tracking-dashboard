@@ -9,7 +9,7 @@ const Card = ({
   title,
   currentHours,
   previousHours,
-  periodicity,
+  period,
   bgColor,
   ...props
 }) => {
@@ -32,7 +32,7 @@ const Card = ({
         <div className="card__details">
           <h2 className="card__current-hours">{currentHours}hrs</h2>
           <div>
-            <strong className="card__periodicity">Last {periodicity} - </strong>
+            <strong className="card__periodicity">Last {period} - </strong>
             <strong className="card__previous-hours">{previousHours}hrs</strong>
           </div>
         </div>
@@ -54,7 +54,7 @@ Card.defaultProps = {
   title: 'Work',
   currentHours: 32,
   previousHours: 36,
-  periodicity: 'Week',
+  period: 'Week',
 };
 
 export default Card;

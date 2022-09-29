@@ -41,6 +41,13 @@ const TimeTrackingComponent = () => {
             image={image}
             currentHours={currentHours}
             previousHours={previousHours}
+            period={
+              period === 'daily'
+                ? 'Day'
+                : period === 'weekly'
+                ? 'Week'
+                : 'Month'
+            }
           />
         );
       })}

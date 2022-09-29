@@ -4,7 +4,7 @@ import profilePic from '../../images/image-jeremy.png';
 import './ProfileComponent.scss';
 
 const ProfileComponent = () => {
-  const [period, setPeriod] = useContext(PeriodContext);
+  const [, setPeriod] = useContext(PeriodContext);
 
   return (
     <div className="profile">
